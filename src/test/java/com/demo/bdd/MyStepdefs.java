@@ -1,21 +1,15 @@
 package com.demo.bdd;
 
-import com.demo.bdd.BDDTests;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-
-
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 
-public class MyStepdefs extends BDDTests {
+public class MyStepdefs extends SpringIntegrationTest {
 
     ResponseEntity<String> response = null;
 
